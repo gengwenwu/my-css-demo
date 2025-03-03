@@ -1,0 +1,54 @@
+{
+	// easycom 配置，自动导入uni-ui组件库
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/flex/flex-index",
+			"style": {
+				"navigationBarTitleText": "flex"
+			}
+		},
+		{
+			"path": "pages/flex/flex-direction",
+			"style": {
+				"navigationBarTitleText": "flex-direction"
+			}
+		},
+		{
+			"path": "pages/flex/justify-content",
+			"style": {
+				"navigationBarTitleText": "justify-content"
+			}
+		},
+		{
+			"path": "pages/flex/flex-wrap",
+			"style": {
+				"navigationBarTitleText": "flex-wrap"
+			}
+		},
+		{
+			"path": "pages/flex/align-items",
+			"style": {
+				"navigationBarTitleText": "align-items"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
