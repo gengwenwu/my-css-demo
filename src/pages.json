@@ -59,13 +59,19 @@
 		{
 			"path": "pages/flex/flex-item-flex",
 			"style": {
-				"navigationBarTitleText": "flex属性"
+				"navigationBarTitleText": "子项 - flex属性"
 			}
 		},
 		{
 			"path": "pages/flex/flex-item-align-self",
 			"style": {
-				"navigationBarTitleText": "align-self"
+				"navigationBarTitleText": "子项 - align-self属性"
+			}
+		},
+		{
+			"path": "pages/flex/flex-item-order",
+			"style": {
+				"navigationBarTitleText": "子项 - order属性"
 			}
 		}
 	],

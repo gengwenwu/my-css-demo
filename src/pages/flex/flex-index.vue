@@ -26,6 +26,9 @@
     <navigator url="/pages/flex/flex-item-align-self">
       <text>子项 - align-self属性</text>
     </navigator>
+    <navigator url="/pages/flex/flex-item-order">
+      <text>子项 - order属性</text>
+    </navigator>
   </view>
 </template>
 
