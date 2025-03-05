@@ -1,10 +1,40 @@
-<script lang="ts" setup></script>
-
 <!-- 这是flex布局，flex-direction 案例demo -->
 
+<script lang="ts" setup>
+
+// flex-direction 属性值范围
+const directionRange = ref([
+  { value: "row", text: "row" },
+  { value: "row-reverse", text: "row-reverse" },
+  { value: "column", text: "column" },
+  { value: "column-reverse", text: "column-reverse" },
+]);
+
+// 当前选择的flex-direction
+const currentDirection = ref(null);
+
+// 监听flex-direction变化
+const onDirectionChange = (e) => {
+  currentDirection.value = e;
+};
+
+</script>
+
 <template>
+  <view>
+    <uni-section class="select-view">
+      <uni-data-select
+        label="flex-direction"
+        v-model="currentDirection"
+        :localdata="directionRange"
+        @change="onDirectionChange"
+        :clear="false"
+      ></uni-data-select>
+    </uni-section>
+  </view>
+
   <view class="content">
-    <div>
+    <div :style="{ flexDirection: currentDirection }">
       <span>1</span>
       <span>2</span>
       <span>3</span>
@@ -31,8 +61,8 @@ div {
   // 4, y轴反转，简单了解即可
   // flex-direction: column-reverse;
 
-  width: 800px;
-  height: 300px;
+  width: 700px;
+  height: 450px;
   background-color: pink;
 }
 
@@ -40,5 +70,13 @@ div span {
   width: 150px;
   height: 100px;
   background-color: purple;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 32px;
+}
+
+.select-view {
+  width: 280px;
+  margin-bottom: 10px;
 }
 </style>
