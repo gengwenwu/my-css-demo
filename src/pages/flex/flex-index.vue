@@ -17,10 +17,10 @@
     <navigator url="/pages/flex/align-content">
       <text>align-content</text>
     </navigator>
-    
+    <navigator url="/pages/flex/flex-flow">
+      <text>flex-flow</text>
+    </navigator>
   </view>
-
-  
 </template>
 
 <style lang="less" scoped>

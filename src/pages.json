@@ -49,6 +49,12 @@
 			"style": {
 				"navigationBarTitleText": "align-content"
 			}
+		},
+		{
+			"path": "pages/flex/flex-flow",
+			"style": {
+				"navigationBarTitleText": "flex-flow"
+			}
 		}
 	],
 	"globalStyle": {
