@@ -3,25 +3,28 @@
 <template>
   <view class="content">
     <navigator url="/pages/flex/flex-direction">
-      <text>flex-direction</text>
+      <text>父项 - flex-direction</text>
     </navigator>
     <navigator url="/pages/flex/justify-content">
-      <text>justify-content</text>
+      <text>父项 - justify-content</text>
     </navigator>
     <navigator url="/pages/flex/flex-wrap">
-      <text>flex-wrap</text>
+      <text>父项 - flex-wrap</text>
     </navigator>
     <navigator url="/pages/flex/align-items">
-      <text>align-items</text>
+      <text>父项 - align-items</text>
     </navigator>
     <navigator url="/pages/flex/align-content">
-      <text>align-content</text>
+      <text>父项 - align-content</text>
     </navigator>
     <navigator url="/pages/flex/flex-flow">
-      <text>flex-flow</text>
+      <text>父项 - flex-flow</text>
     </navigator>
     <navigator url="/pages/flex/flex-item-flex">
-      <text>flex-item-flex</text>
+      <text>子项 - flex属性</text>
+    </navigator>
+    <navigator url="/pages/flex/flex-item-align-self">
+      <text>子项 - align-self属性</text>
     </navigator>
   </view>
 </template>

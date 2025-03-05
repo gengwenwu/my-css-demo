@@ -59,7 +59,13 @@
 		{
 			"path": "pages/flex/flex-item-flex",
 			"style": {
-				"navigationBarTitleText": "flex-item-flex"
+				"navigationBarTitleText": "flex属性"
+			}
+		},
+		{
+			"path": "pages/flex/flex-item-align-self",
+			"style": {
+				"navigationBarTitleText": "align-self"
 			}
 		}
 	],
