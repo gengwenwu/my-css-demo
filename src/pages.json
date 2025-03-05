@@ -43,6 +43,12 @@
 			"style": {
 				"navigationBarTitleText": "align-items"
 			}
+		},
+		{
+			"path": "pages/flex/align-content",
+			"style": {
+				"navigationBarTitleText": "align-content"
+			}
 		}
 	],
 	"globalStyle": {

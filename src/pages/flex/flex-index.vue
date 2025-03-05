@@ -14,7 +14,13 @@
     <navigator url="/pages/flex/align-items">
       <text>align-items</text>
     </navigator>
+    <navigator url="/pages/flex/align-content">
+      <text>align-content</text>
+    </navigator>
+    
   </view>
+
+  
 </template>
 
 <style lang="less" scoped>
