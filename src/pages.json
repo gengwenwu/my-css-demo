@@ -55,6 +55,12 @@
 			"style": {
 				"navigationBarTitleText": "flex-flow"
 			}
+		},
+		{
+			"path": "pages/flex/flex-item-flex",
+			"style": {
+				"navigationBarTitleText": "flex-item-flex"
+			}
 		}
 	],
 	"globalStyle": {

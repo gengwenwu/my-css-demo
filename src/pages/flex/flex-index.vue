@@ -20,6 +20,9 @@
     <navigator url="/pages/flex/flex-flow">
       <text>flex-flow</text>
     </navigator>
+    <navigator url="/pages/flex/flex-item-flex">
+      <text>flex-item-flex</text>
+    </navigator>
   </view>
 </template>
 
