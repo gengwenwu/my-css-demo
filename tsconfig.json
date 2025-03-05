@@ -5,9 +5,14 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     // 语法验证
     "types": [
       "@dcloudio/types",
@@ -16,9 +21,23 @@
     ]
   },
   "vueCompilerOptions": {
-    "plugins": ["@uni-helper/uni-app-types/volar-plugin"],
+    "plugins": [
+      "@uni-helper/uni-app-types/volar-plugin"
+    ],
     // vue 编译器类型，校验标签类型
-    "nativeTags": ["block", "component", "template", "slot"]
+    "nativeTags": [
+      "block",
+      "component",
+      "template",
+      "slot"
+    ]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    // 加入改行代码，vue文件中 ref 不会报红色波浪线
+    "./auto-imports.d.ts"
+  ]
 }
