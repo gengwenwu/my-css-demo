@@ -5,7 +5,6 @@
 
 import { directionRange, flexWrapRange } from "@/utils/helper.js";
 
-
 // flex-direction 属性值范围
 const directionRangeRef = ref(directionRange);
 // 当前选择的flex-direction
@@ -71,7 +70,8 @@ div {
   /*  给父级添加flex属性 */
   display: flex;
 
-  flex-direction: row; // row、 column
+  // 主轴方向 row、 column
+  flex-direction: row;
 
   // flex布局中，默认的子元素是不会换行的。
   // 如果装不下，会缩小子元素的宽度，放在父容器里面
