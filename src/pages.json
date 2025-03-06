@@ -17,61 +17,61 @@
 		{
 			"path": "pages/flex/flex-index",
 			"style": {
-				"navigationBarTitleText": "flex"
+				"navigationBarTitleText": "flex案例"
 			}
 		},
 		{
 			"path": "pages/flex/flex-direction",
 			"style": {
-				"navigationBarTitleText": "flex-direction"
+				"navigationBarTitleText": "主轴方向：flex-direction"
 			}
 		},
 		{
 			"path": "pages/flex/justify-content",
 			"style": {
-				"navigationBarTitleText": "justify-content"
+				"navigationBarTitleText": "主轴排列方式：justify-content"
 			}
 		},
 		{
 			"path": "pages/flex/flex-wrap",
 			"style": {
-				"navigationBarTitleText": "flex-wrap"
+				"navigationBarTitleText": "子项是否换行：flex-wrap"
 			}
 		},
 		{
 			"path": "pages/flex/align-items",
 			"style": {
-				"navigationBarTitleText": "align-items"
+				"navigationBarTitleText": "侧轴排列方式(单行)：align-items"
 			}
 		},
 		{
 			"path": "pages/flex/align-content",
 			"style": {
-				"navigationBarTitleText": "align-content"
+				"navigationBarTitleText": "侧轴排列方式(多行)：align-content"
 			}
 		},
 		{
 			"path": "pages/flex/flex-flow",
 			"style": {
-				"navigationBarTitleText": "flex-flow"
+				"navigationBarTitleText": "符合属性：flex-flow"
 			}
 		},
 		{
 			"path": "pages/flex/flex-item-flex",
 			"style": {
-				"navigationBarTitleText": "子项 - flex属性"
+				"navigationBarTitleText": "item子项 - flex属性"
 			}
 		},
 		{
 			"path": "pages/flex/flex-item-align-self",
 			"style": {
-				"navigationBarTitleText": "子项 - align-self属性"
+				"navigationBarTitleText": "item子项 - align-self属性"
 			}
 		},
 		{
 			"path": "pages/flex/flex-item-order",
 			"style": {
-				"navigationBarTitleText": "子项 - order属性"
+				"navigationBarTitleText": "item子项 - order属性"
 			}
 		}
 	],

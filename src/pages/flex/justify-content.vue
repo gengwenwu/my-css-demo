@@ -1,10 +1,61 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { directionRange, justifyContentRange } from "@/utils/helper.js";
 
-<!-- 这是flex布局，justify-content 案例demo -->
+/**
+ * 这是flex布局，justify-content 案例demo
+ **/
+
+// flex-direction 属性值范围
+const directionRangeRef = ref(directionRange);
+// 当前选择的flex-direction
+const currentDirectionRef = ref(null);
+// 监听flex-direction变化
+const onDirectionChange = (e) => {
+  currentDirectionRef.value = e;
+};
+
+// justify-content 属性值范围
+const justifyContentRangeRef = ref(justifyContentRange);
+// 当前选择的justify-content
+const currentjustifyContentRef = ref(null);
+// 监听justify-content变化
+const onJustifyContentChange = (e) => {
+  currentjustifyContentRef.value = e;
+};
+</script>
 
 <template>
+  <view class="select-container">
+    <!-- flex方向 -->
+    <uni-section class="select-view">
+      <uni-data-select
+        label="flex-direction"
+        v-model="currentDirectionRef"
+        :localdata="directionRangeRef"
+        @change="onDirectionChange"
+        :clear="false"
+      />
+    </uni-section>
+
+    <!-- 主轴对其方式 -->
+    <uni-section class="select-view">
+      <uni-data-select
+        label="justify-content"
+        v-model="currentjustifyContentRef"
+        :localdata="justifyContentRangeRef"
+        @change="onJustifyContentChange"
+        :clear="false"
+      />
+    </uni-section>
+  </view>
+
   <view class="content">
-    <div>
+    <div
+      :style="{
+        flexDirection: currentDirectionRef,
+        justifyContent: currentjustifyContentRef,
+      }"
+    >
       <span>1</span>
       <span>2</span>
       <span>3</span>
@@ -52,5 +103,8 @@ div span {
   width: 150px;
   height: 100px;
   background-color: purple;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 32px;
 }
 </style>

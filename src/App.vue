@@ -10,4 +10,17 @@ onHide(() => {
   console.log("App Hide");
 });
 </script>
-<style></style>
+
+<style>
+.select-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.select-view {
+  width: 280px;
+  margin-right: 15px;
+}
+</style>

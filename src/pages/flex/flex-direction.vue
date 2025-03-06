@@ -17,17 +17,19 @@ const onDirectionChange = (e) => {
 </script>
 
 <template>
-  <uni-section class="select-view">
-    <uni-data-select
-      label="flex-direction"
-      v-model="currentDirectionRef"
-      :localdata="directionRangeRef"
-      @change="onDirectionChange"
-      :clear="false"
-    ></uni-data-select>
-  </uni-section>
+  <view class="select-container">
+    <!-- flex方向 -->
+    <uni-section class="select-view">
+      <uni-data-select
+        label="flex-direction"
+        v-model="currentDirectionRef"
+        :localdata="directionRangeRef"
+        @change="onDirectionChange"
+        :clear="false"
+      />
+    </uni-section>
+  </view>
 
-  <!--选择器 -->
   <view>
     <div :style="{ flexDirection: currentDirectionRef }">
       <span>1</span>
@@ -68,10 +70,5 @@ div span {
   border: 1px solid #fff;
   color: #fff;
   font-size: 32px;
-}
-
-.select-view {
-  width: 280px;
-  margin-bottom: 10px;
 }
 </style>
