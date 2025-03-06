@@ -1,14 +1,84 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+/**
+ * 这是flex布局，align-content 案例 demo
+ **/
+
+import { directionRange, alignContentRange } from "@/utils/helper.js";
+
+// flex-direction 属性值范围
+const directionRangeRef = ref(directionRange);
+// 当前选择的flex-direction
+const currentDirectionRef = ref("");
+// 监听flex-direction变化
+const onDirectionChange = (e) => {
+  changeSpanStyle(e, currentAlignContentRef.value);
+  currentDirectionRef.value = e;
+};
+
+// span样式
+const spanStyleRef = ref("span-size");
+// align-content 属性值范围
+const alignContentRangeRef = ref(alignContentRange);
+// 当前选择的align-content
+const currentAlignContentRef = ref("");
+// 监听align-content变化
+const onAlignContentChange = (e) => {
+  changeSpanStyle(currentDirectionRef.value, e);
+  currentAlignContentRef.value = e;
+};
+
+// 设置span样式。因为在 align-content等于"stretch"，高或宽不能设置，否则stretch不生效
+function changeSpanStyle(direction: string, alignContent: string) {
+  if ("stretch" == alignContent) {
+    if ("column" === direction) {
+      spanStyleRef.value = "span-column-stretch";
+    } else {
+      spanStyleRef.value = "span-row-stretch";
+    }
+  } else {
+    spanStyleRef.value = "span-size";
+  }
+}
+</script>
 
 <template>
+  <view class="select-container">
+    <!-- flex方向 -->
+    <uni-section class="select-view">
+      <uni-data-select
+        label="flex-direction"
+        v-model="currentDirectionRef"
+        :localdata="directionRangeRef"
+        @change="onDirectionChange"
+        :clear="false"
+      />
+    </uni-section>
+
+    <!-- 主轴对其方式 -->
+    <uni-section class="select-view">
+      <uni-data-select
+        label="align-content"
+        v-model="currentAlignContentRef"
+        :localdata="alignContentRangeRef"
+        @change="onAlignContentChange"
+        :clear="false"
+      />
+    </uni-section>
+  </view>
+
   <view class="content">
-    <div>
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span>4</span>
-      <span>5</span>
-      <span>6</span>
+    <div
+      :style="{
+        flexDirection: currentDirectionRef,
+        alignContent: currentAlignContentRef,
+      }"
+    >
+      <span :class="spanStyleRef">1</span>
+      <span :class="spanStyleRef">2</span>
+      <span :class="spanStyleRef">3</span>
+      <span :class="spanStyleRef">4</span>
+      <span :class="spanStyleRef">5</span>
+      <span :class="spanStyleRef">6</span>
     </div>
   </view>
 </template>
@@ -18,7 +88,7 @@ div {
   /*  给父级添加flex属性 */
   display: flex;
   // 主轴方向 row、 column
-  flex-direction: row; 
+  flex-direction: row;
 
   // 需要设置换行，否则 align-content 不起作用。既：单行情况下，align-content 不起作用。
   flex-wrap: wrap;
@@ -54,5 +124,24 @@ div span {
   background-color: purple;
   color: #fff;
   margin: 10px;
+}
+
+// align-content默认样式，
+// 注意：设置为stretch的时候，height(Y是侧轴) 或 width(X是侧轴) 不要设置，否则 stretch 不生效
+.span-size {
+  width: 150px;
+  height: 100px;
+}
+
+// flex-direction 为 row，align-content 为 stretch，span的样式
+.span-row-stretch {
+  height: auto;
+  width: 150px;
+}
+
+// flex-direction 为 column，align-content 为 stretch，span的样式
+.span-column-stretch {
+  height: 100px;
+  width: auto;
 }
 </style>

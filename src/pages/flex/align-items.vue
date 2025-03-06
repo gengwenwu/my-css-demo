@@ -11,7 +11,7 @@ const directionRangeRef = ref(directionRange);
 const currentDirectionRef = ref("");
 // 监听flex-direction变化
 const onDirectionChange = (e) => {
-  changeSpanStyle(e, currentalignItemsRef.value);
+  changeSpanStyle(e, currentAlignItemsRef.value);
   currentDirectionRef.value = e;
 };
 
@@ -20,11 +20,11 @@ const spanStyleRef = ref("span-size");
 // align-items 属性值范围
 const alignItemsRef = ref(alignItemsRange);
 // 当前选择的align-items
-const currentalignItemsRef = ref("");
+const currentAlignItemsRef = ref("");
 // 监听align-items变化
 const onAlignItemsChange = (e) => {
   changeSpanStyle(currentDirectionRef.value, e);
-  currentalignItemsRef.value = e;
+  currentAlignItemsRef.value = e;
 };
 
 // 设置span样式。因为在 align-items等于"stretch"，高或宽不能设置，否则stretch不生效
@@ -58,7 +58,7 @@ function changeSpanStyle(direction: string, alignItems: string) {
     <uni-section class="select-view">
       <uni-data-select
         label="align-items"
-        v-model="currentalignItemsRef"
+        v-model="currentAlignItemsRef"
         :localdata="alignItemsRef"
         @change="onAlignItemsChange"
         :clear="false"
@@ -70,7 +70,7 @@ function changeSpanStyle(direction: string, alignItems: string) {
     <div
       :style="{
         flexDirection: currentDirectionRef,
-        alignItems: currentalignItemsRef,
+        alignItems: currentAlignItemsRef,
       }"
     >
       <span :class="spanStyleRef">1</span>
