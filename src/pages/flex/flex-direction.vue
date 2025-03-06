@@ -1,40 +1,35 @@
-<!-- 这是flex布局，flex-direction 案例demo -->
-
 <script lang="ts" setup>
+import { directionRange } from "@/utils/helper.js";
+
+/**
+ * 这是flex布局，flex-direction 案例 demo
+ **/
 
 // flex-direction 属性值范围
-const directionRange = ref([
-  { value: "row", text: "row" },
-  { value: "row-reverse", text: "row-reverse" },
-  { value: "column", text: "column" },
-  { value: "column-reverse", text: "column-reverse" },
-]);
-
+const directionRangeRef = ref(directionRange);
 // 当前选择的flex-direction
-const currentDirection = ref(null);
+const currentDirectionRef = ref(null);
 
 // 监听flex-direction变化
 const onDirectionChange = (e) => {
-  currentDirection.value = e;
+  currentDirectionRef.value = e;
 };
-
 </script>
 
 <template>
-  <view>
-    <uni-section class="select-view">
-      <uni-data-select
-        label="flex-direction"
-        v-model="currentDirection"
-        :localdata="directionRange"
-        @change="onDirectionChange"
-        :clear="false"
-      ></uni-data-select>
-    </uni-section>
-  </view>
+  <uni-section class="select-view">
+    <uni-data-select
+      label="flex-direction"
+      v-model="currentDirectionRef"
+      :localdata="directionRangeRef"
+      @change="onDirectionChange"
+      :clear="false"
+    ></uni-data-select>
+  </uni-section>
 
-  <view class="content">
-    <div :style="{ flexDirection: currentDirection }">
+  <!--选择器 -->
+  <view>
+    <div :style="{ flexDirection: currentDirectionRef }">
       <span>1</span>
       <span>2</span>
       <span>3</span>
