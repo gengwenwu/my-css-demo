@@ -18,7 +18,7 @@ export const justifyContentRange = [
 // flex flex-wrap 范围
 export const flexWrapRange = [
   { value: "nowrap", text: "nowrap" },
-  { value: "warp", text: "warp" },
+  { value: "wrap", text: "wrap" },
 ];
 
 // flex align-items 范围

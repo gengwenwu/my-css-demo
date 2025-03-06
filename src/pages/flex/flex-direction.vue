@@ -47,7 +47,7 @@ div {
   /* flex-direction 属性值 */
   // 注意：主轴、侧轴怎么判定，取决于 flex-direction 的属性值。
   // 1，默认的主轴是X轴(x轴、row轴， 从左到右),。既：元素默认跟着主轴排列，所以 flex-direction: row; 可以省略
-  // flex-direction: row;
+  flex-direction: row;
 
   // 2，X轴反转，简单了解即可
   // flex-direction: row-reverse;

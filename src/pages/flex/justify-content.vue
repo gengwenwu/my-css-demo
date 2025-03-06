@@ -77,7 +77,7 @@ div {
 
   // 1, justify-content 默认值: flex-start，从头部开始对齐。
   //    如果x轴是主轴，既：左对齐。
-  //    justify-content: flex-start;
+  justify-content: flex-start;
 
   // 2, 从尾部开始对齐。如x轴是主轴，既：右对齐。
   //     注意：与flex-direction:row-reverse有区别:
