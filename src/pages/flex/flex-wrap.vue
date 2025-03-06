@@ -21,7 +21,6 @@ const flexWrapRangeRef = ref(flexWrapRange);
 const currentFlexWrapRangeRef = ref(null);
 // 监听flex-wrap变化
 const onFlexWrapChange = (e) => {
-  console.log("onFlexWrapChange:", e);
   currentFlexWrapRangeRef.value = e;
 };
 </script>
