@@ -17,10 +17,10 @@ const onDirectionChange = (e) => {
 // flex-wrap 属性值范围
 const flexWrapRangeRef = ref(flexWrapRange);
 // 当前选择的flex-wrap
-const currentFlexWrapRangeRef = ref(null);
+const currentFlexWrapRef = ref(null);
 // 监听flex-wrap变化
 const onFlexWrapChange = (e) => {
-  currentFlexWrapRangeRef.value = e;
+  currentFlexWrapRef.value = e;
 };
 </script>
 
@@ -41,7 +41,7 @@ const onFlexWrapChange = (e) => {
     <uni-section class="select-view">
       <uni-data-select
         label="flex-wrap"
-        v-model="currentFlexWrapRangeRef"
+        v-model="currentFlexWrapRef"
         :localdata="flexWrapRangeRef"
         @change="onFlexWrapChange"
         :clear="false"
@@ -53,7 +53,7 @@ const onFlexWrapChange = (e) => {
     <div
       :style="{
         flexDirection: currentDirectionRef,
-        flexWrap: currentFlexWrapRangeRef,
+        flexWrap: currentFlexWrapRef,
       }"
     >
       <span>1</span>

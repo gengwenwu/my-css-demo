@@ -18,7 +18,7 @@ const onDirectionChange = (e) => {
 // span样式
 const spanStyleRef = ref("span-size");
 // align-items 属性值范围
-const alignItemsRef = ref(alignItemsRange);
+const alignItemRangeRef = ref(alignItemsRange);
 // 当前选择的align-items
 const currentAlignItemsRef = ref("");
 // 监听align-items变化
@@ -59,7 +59,7 @@ function changeSpanStyle(direction: string, alignItems: string) {
       <uni-data-select
         label="align-items"
         v-model="currentAlignItemsRef"
-        :localdata="alignItemsRef"
+        :localdata="alignItemRangeRef"
         @change="onAlignItemsChange"
         :clear="false"
       />
