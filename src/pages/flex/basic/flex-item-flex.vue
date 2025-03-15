@@ -3,15 +3,15 @@
 <template>
   <view class="content">
     <section>
-      <div>1</div>
-      <div>2</div>
+      <div>1 </div>
+      <div>2 (flex: 1)</div>
       <div>3</div>
     </section>
 
     <p>
-      <span>4</span>
-      <span>5</span>
-      <span>6</span>
+      <span>4 (flex: 1)</span>
+      <span>5 (flex: 2)</span>
+      <span>6 (flex: 1)</span>
     </p>
   </view>
 </template>

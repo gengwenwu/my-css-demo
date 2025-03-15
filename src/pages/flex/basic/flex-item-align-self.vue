@@ -5,7 +5,7 @@
     <div>
       <span>1</span>
       <span>2</span>
-      <span>3</span>
+      <span>3 (align-self: flex-end)</span>
     </div>
   </view>
 </template>
@@ -18,23 +18,19 @@ div {
 
   /*  给父级添加flex属性 */
   display: flex;
+
+  // 让所有子盒子沿着侧轴底端对齐
+  // align-items: flex-end;
 }
 
 div span:nth-child(3) {
-  // 将第3个盒子，从尾部提前到第1个位置。
-  // 默认order是0，写-1，所以排到最前头
-  order: -1;
-}
-
-span:nth-child(3) {
-  // 将第3个盒子，从尾部提前到第1个位置。
-  // 默认order是0，写-1，所以排到最前头
-  order: -1;
+  // 让第3个盒子沿着侧轴底端对齐
+  align-self: flex-end;
 }
 
 div span {
   color: #fff;
-  font-size: 32px;
+  font-size: 15px;
   width: 150px;
   height: 100px;
   background-color: purple;

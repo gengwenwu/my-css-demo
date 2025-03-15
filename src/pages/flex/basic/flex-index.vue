@@ -2,31 +2,31 @@
 
 <template>
   <view class="content">
-    <navigator url="/pages/flex/flex-direction">
+    <navigator url="/pages/flex/basic/flex-direction">
       <text>父项 - flex-direction</text>
     </navigator>
-    <navigator url="/pages/flex/justify-content">
+    <navigator url="/pages/flex/basic/justify-content">
       <text>父项 - justify-content</text>
     </navigator>
-    <navigator url="/pages/flex/flex-wrap">
+    <navigator url="/pages/flex/basic/flex-wrap">
       <text>父项 - flex-wrap</text>
     </navigator>
-    <navigator url="/pages/flex/align-items">
+    <navigator url="/pages/flex/basic/align-items">
       <text>父项 - align-items</text>
     </navigator>
-    <navigator url="/pages/flex/align-content">
+    <navigator url="/pages/flex/basic/align-content">
       <text>父项 - align-content</text>
     </navigator>
-    <navigator url="/pages/flex/flex-flow">
+    <navigator url="/pages/flex/basic/flex-flow">
       <text>父项 - flex-flow</text>
     </navigator>
-    <navigator url="/pages/flex/flex-item-flex">
+    <navigator url="/pages/flex/basic/flex-item-flex">
       <text>子项 - flex属性</text>
     </navigator>
-    <navigator url="/pages/flex/flex-item-align-self">
+    <navigator url="/pages/flex/basic/flex-item-align-self">
       <text>子项 - align-self属性</text>
     </navigator>
-    <navigator url="/pages/flex/flex-item-order">
+    <navigator url="/pages/flex/basic/flex-item-order">
       <text>子项 - order属性</text>
     </navigator>
   </view>

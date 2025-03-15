@@ -4,7 +4,7 @@ import { ref } from "vue";
 const demosRef = ref([
   {
     text: "flex",
-    url: "/pages/flex/flex-index",
+    url: "/pages/flex/basic/flex-index",
     openType: "navigate",
   },
 ]);
