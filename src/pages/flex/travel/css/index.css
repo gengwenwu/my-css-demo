@@ -1,0 +1,141 @@
+.content {
+  min-width: 320px;
+  max-width: 540px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+  color: #000;
+  background: #f2f2f2;
+  /* 没有横向滚动条 */
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+
+  /**
+   * box-sizing 会改变元素宽度和高度的计算方式。 值有：
+   * 1, content-box; 默认值，元素的宽度和高度只包括内容区域，不包括边框、内边距和外边距。
+   * 2, border-box; 元素的宽度和高度包括内容区域、内边距和边框，但不包括外边距。
+   * 3, inherit; 继承其父元素的 box-sizing 属性值。
+   */
+  box-sizing: border-box;
+}
+
+/* 搜索模块 */
+.search-index {
+  /* 固定定位 */
+  position: fixed;
+  /* 固定定位，必须有宽度 */
+  width: 100%;
+  /* 
+    * 固定定位，以屏幕为主，和父布局没有关系。
+    * 父布局设置的 min-width、max-width 对于 position: fixed 是无效的，
+    * 所以，这里需要再设置。 
+    */
+  min-width: 320px;
+  max-width: 540px;
+  height: 44px;
+
+  /* 相对与父布局，向右偏移50%距离 */
+  left: 50%;
+  /* -50%:让元素向左移动自身宽度的一半。再加上left:50%，就可以实现元素居中效果 */
+  transform: translateX(-50%);
+  top: 0px;
+
+  /* flex布局 */
+  display: flex;
+
+  background-color: #f6f6f6;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 搜索样式 */
+.search {
+  flex: 1;
+
+  height: 26px;
+  /* 上下border，占据了2px，所以26-2=24px，这样文字才居中 */
+  line-height: 24px;
+
+  /** 
+   * position 属性用于设定元素的定位方式，值有：
+   * 1，static，默认值，按照正常的文档流进行布局，既：元素会按照在 HTML 中出现的顺序依次排列。
+   *            top、right、bottom、left 和 z-index 属性对其不起作用。
+   * 2，relative，相对定位。元素会相对于其正常位置进行定位。 可以使用 top、right、bottom、left 属性。
+   * 3，absolute，绝对定位。元素会相对于最近的已定位父元素（即 position 值不是 static 的祖先元素）进行定位。
+   *              如果没有已定位的父元素，则相对于浏览器窗口进行定位。可以使用 使用 top、right、bottom、left 属性。
+   * 4，fixed，固定定位。元素会脱离正常的文档流，会相对于浏览器窗口进行定位。可以使用 top、right、bottom、left 属性。
+   * 5，sticky，粘性定位。元素会根据滚动位置进行定位。类似于 fixed 定位。它结合了 relative 和 fixed 的特性。
+   *            可以使用 top、right、bottom、left 属性。
+   */
+  position: relative;
+  margin: 7px 10px;
+  padding-left: 25px;
+
+  /* 添加阴影效果 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* 搜索logo */
+.search::before {
+  content: '';
+  /* 绝对定位 */
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/sprite.png) no-repeat -59px -279px;
+  background-size: 104px auto;
+}
+
+.user {
+  width: 44px;
+  height: 44px;
+  font-size: 12px;
+  /* 文字居中对齐 */
+  text-align: center;
+  color: #2eaae0;
+}
+
+/**
+ * ::before 和 ::after 是伪元素，用于在元素的内容之前或之后插入虚拟的内容。
+ * 它们并不存在于 HTML 文档中，而是通过 CSS 创建并添加到页面上。 
+ */
+.user::before {
+  /* 
+   * 伪元素必须配合 content 属性使用，content 可以插入文本、图片、计数器等内容：
+   * 1，插入文本：content: '提示';
+   * 2，插入图片：content: url('image.jpg');
+   * 3，结合计数器使用: content: counter(my-counter) ". ";
+   */
+  content: '';
+
+  /* 
+   * display: 决定了元素如何布局以及如何与其他元素相互作用。 
+   * 1，inline(默认值），内联元素，不会独占一行，不能设置宽度、高度，宽度和高度由内容决定。
+   * 2，block，块级元素，会独占一行，可以设置其宽度、高度、外边距和内边距等属性。   
+   * 3，inline-block：内联块级元素。内联块级元素不会独占一行，但可以设置宽度和高度。
+   * 4，flex, 弹性容器。
+   * 5，grid，网格容器。
+   * 6，none，隐藏元素，元素不会在页面中显示，并且不会占据空间。
+   */
+  display: block;
+  width: 23px;
+  height: 23px;
+
+  /* 
+   * css 精灵图技术: 
+   * 通过 background-image、background-position 和 background-size 等属性，
+   * 精确地定位到大图中具体的小图位置  
+   */
+  background: url(../images/sprite.png) no-repeat -59px -194px;
+  /* background-position: -59px -194px; 上面是省略写法，表示图片的x、y轴坐标位置 */
+
+  /* 设置背景图的尺寸。这里是1倍图的尺寸，104px是宽度，高度自动缩放 */
+  background-size: 104px auto;
+  margin: 4px auto -2px;
+}

@@ -2,6 +2,9 @@
 
 <template>
   <view class="content">
+    <navigator url="/pages/flex/travel/index">
+      <text>携程首页flex综合案例</text>
+    </navigator>
     <navigator url="/pages/flex/basic/flex-direction">
       <text>父项 - flex-direction</text>
     </navigator>

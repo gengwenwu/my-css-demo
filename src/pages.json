@@ -15,7 +15,7 @@
 			}
 		},
 		{
-			"path": "pages/flex/basic/flex-index",
+			"path": "pages/flex/flex-index",
 			"style": {
 				"navigationBarTitleText": "flex案例"
 			}
@@ -72,6 +72,13 @@
 			"path": "pages/flex/basic/flex-item-order",
 			"style": {
 				"navigationBarTitleText": "item子项 - order属性"
+			}
+		},
+		{
+			"path": "pages/flex/travel/index",
+			"style": {
+				"navigationBarTitleText": "index",
+				"navigationStyle": "custom"
 			}
 		}
 	],
