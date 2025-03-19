@@ -139,3 +139,11 @@
   background-size: 104px auto;
   margin: 4px auto -2px;
 }
+
+.focus {
+  padding-top: 46px;
+}
+
+.focus-img {
+  width: 100%;
+}
