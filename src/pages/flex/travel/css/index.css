@@ -1,4 +1,5 @@
 .content {
+  height: 2000px;
   min-width: 320px;
   max-width: 540px;
   margin: 0 auto;
@@ -263,4 +264,77 @@
     background: linear-gradient(to right, #34C2A9, #6CD559);
   }
 
+}
+
+/* 双排导航栏 */
+.subnav-entry {
+  display: flex;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 4px;
+  padding: 5px 0;
+  flex-wrap: wrap;
+
+  .subnav-entry-item {
+    /* 相对于父容器的宽度，子元素占比20%宽度 */
+    flex: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3px 0;
+
+    & [class^="subnav-entry-icon-"] {
+      margin-top: 4px;
+      width: 28px;
+      height: 28px;
+      background: url(../images/subnav-bg.png) no-repeat;
+      background-size: 28px auto;
+    }
+
+    .subnav-entry-icon-wifi {
+      background-position: 0 4px;
+    }
+
+    .subnav-entry-icon-visa {
+      background-position: 3px -28px;
+    }
+
+    .subnav-entry-icon-exchange {
+      background-position: 4px -60px;
+    }
+
+    .subnav-entry-icon-shopping {
+      background-position: 0 -318px;
+    }
+
+    .subnav-entry-icon-guide {
+      background-position: 0 -96px;
+    }
+
+    .subnav-entry-icon-freego {
+      background-position: 4px -162px;
+    }
+
+    .subnav-entry-icon-outplay {
+      background-position: 0 -197px;
+    }
+
+    .subnav-entry-icon-giftcard {
+      background-position: 3px -130px;
+    }
+
+    .subnav-entry-icon-creditcard {
+      background-position: 0 -228px;
+    }
+
+    .subnav-entry-icon-more {
+      background-position: 3px -286px;
+    }
+
+    .subnav-entry-text {
+      font-size: 12px;
+    }
+  }
 }

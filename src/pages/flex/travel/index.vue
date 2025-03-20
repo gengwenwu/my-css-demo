@@ -78,6 +78,50 @@
       </view>
     </view>
 
+    <!-- 5，双排导航栏  -->
+    <view class="subnav-entry">
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-wifi"></view>
+        <view class="subnav-entry-text">wifi电话卡</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-visa"></view>
+        <view class="subnav-entry-text">保险&bull;签证</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-exchange"></view>
+        <view class="subnav-entry-text">外币兑换</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-shopping"></view>
+        <view class="subnav-entry-text">购物</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-guide"></view>
+        <view class="subnav-entry-text">当地向导</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-freego"></view>
+        <view class="subnav-entry-text">自由行</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-outplay"></view>
+        <view class="subnav-entry-text">境外玩乐</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-giftcard"></view>
+        <view class="subnav-entry-text">礼品卡</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-creditcard"></view>
+        <view class="subnav-entry-text">信用卡</view>
+      </view>
+      <view class="subnav-entry-item">
+        <view class="subnav-entry-icon-more"></view>
+        <view class="subnav-entry-text">更多</view>
+      </view>
+    </view>
+
     <!--  -->
   </view>
 </template>
