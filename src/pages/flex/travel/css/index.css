@@ -193,10 +193,74 @@
   & .local-nav-child-icon5 {
     background-position: 0 -128px;
   }
+
+  .text {
+    font-size: 12px;
+    color: #222;
+  }
 }
 
+/* 导航栏 */
+.nav {
+  margin: 0 4px 3px;
+  border-radius: 8px;
+  overflow: hidden;
 
-.text {
-  font-size: 12px;
-  color: #222;
+  .nav-common {
+    background-color: pink;
+    height: 88px;
+    display: flex;
+
+    .nav-items {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .nav-items-item {
+        flex: 1;
+        /* 需要设置 line-height，text-align才会生效 */
+        line-height: 44px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        /* 文字阴影 */
+        text-shadow: 1px 1px rgba(0, 0, 0, .2);
+      }
+
+      .item-bottom {
+        border-bottom: 1px solid #fff;
+      }
+
+      .first-colume {
+        /* bottom center 是 background-position 简写，底部、居中对其 */
+        background: url(../images/hotel.png) no-repeat bottom center;
+        background-size: 121px auto;
+      }
+    }
+
+    /* (-n+2) 表示前两个元素*/
+    .nav-items:nth-child(-n+2) {
+      border-right: 1px solid #fff;
+    }
+  }
+
+  .nav-common:nth-child(1) {
+    /**
+     * 写法一： 需要加上 -webkit- 前缀才生效
+     * background: -webkit-linear-gradient(left, #FA5A55, #FA994D); 
+     */
+
+    /* 写法二，不需要加 -webkit- 前缀 */
+    background: linear-gradient(to right, #FA5A55, #FA994D);
+  }
+
+  .nav-common:nth-child(2) {
+    margin: 3px 0;
+    background: linear-gradient(to right, #4B90ED, #53BCED);
+  }
+
+  .nav-common:nth-child(3) {
+    background: linear-gradient(to right, #34C2A9, #6CD559);
+  }
+
 }

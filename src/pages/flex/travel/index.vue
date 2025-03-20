@@ -35,7 +35,50 @@
       </view>
     </view>
 
-    <!-- 4，  -->
+    <!-- 4，导航  -->
+    <view class="nav">
+      <view class="nav-common">
+        <view class="nav-items">
+          <view class="nav-items-item first-colume">酒店</view>
+        </view>
+        <view class="nav-items">
+          <view class="nav-items-item item-bottom">海外酒店</view>
+          <view class="nav-items-item">特价酒店</view>
+        </view>
+        <view class="nav-items">
+          <view class="nav-items-item item-bottom">团购</view>
+          <view class="nav-items-item">民宿/客栈</view>
+        </view>
+      </view>
+      <view class="nav-common">
+        <view class="nav-items">
+          <view class="nav-items-item first-colume">机票</view>
+        </view>
+        <view class="nav-items">
+          <view class="nav-items-item item-bottom">火车票</view>
+          <view class="nav-items-item">特价机票</view>
+        </view>
+        <view class="nav-items">
+          <view class="nav-items-item item-bottom">汽车票/船票</view>
+          <view class="nav-items-item">专车/租车</view>
+        </view>
+      </view>
+      <view class="nav-common">
+        <view class="nav-items">
+          <view class="nav-items-item first-colume">旅游</view>
+        </view>
+        <view class="nav-items">
+          <view class="nav-items-item item-bottom">门票</view>
+          <view class="nav-items-item">目的地攻略</view>
+        </view>
+        <view class="nav-items">
+          <view class="nav-items-item item-bottom">游轮旅行</view>
+          <view class="nav-items-item">定制旅行</view>
+        </view>
+      </view>
+    </view>
+
+    <!--  -->
   </view>
 </template>
 
