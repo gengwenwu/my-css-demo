@@ -1,5 +1,4 @@
 .content {
-  height: 2000px;
   min-width: 320px;
   max-width: 540px;
   margin: 0 auto;
@@ -337,4 +336,76 @@
       font-size: 12px;
     }
   }
+}
+
+/* 销售区域 */
+.sales-box {
+  border-top: 1px solid #bbb;
+  background-color: #fff;
+  margin-top: 8px;
+
+  /* 销售区域 - 头部 */
+  .sales-header {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+    /* display: flex;
+    justify-content: space-between; */
+
+    /* 使用伪元素添加图片 */
+    .sales-header-title::after {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      content: "";
+      width: 73px;
+      height: 20px;
+      background: url(../images/hot.png) no-repeat 0 -15px;
+      background-size: 73px auto;
+    }
+
+    .sales-header-more {
+      position: absolute;
+      top: 8px;
+      right: 15px;
+      font-size: 12px;
+      /* 添加渐变 */
+      background: linear-gradient(to right, #FF506C, #FF6BC6);
+      border-radius: 15px;
+      padding: 3px 20px 3px 10px;
+      color: #fff;
+
+      /* 使用伪元素添加箭头效果 */
+      &::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        right: 9px;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+
+        /* 利用border，再旋转45度，制作箭头 */
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  /* 销售区域 - 内容 */
+  .sales-body {
+    .sales-body-row {
+      display: flex;
+      border-bottom: 1px solid #eee;
+
+      .row-image {
+        flex: 1;
+
+        &:nth-child(1) {
+          border-right: 1px solid #eee;
+        }
+      }
+    }
+  }
+
 }

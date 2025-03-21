@@ -122,7 +122,29 @@
       </view>
     </view>
 
-    <!--  -->
+    <!-- 6, 销售模块 -->
+    <view class="sales-box">
+      <!-- 头部 -->
+      <view class="sales-header">
+        <view class="sales-header-title"></view>
+        <view class="sales-header-more">获取更多福利</view>
+      </view>
+      <!-- 内容 -->
+      <view class="sales-body">
+        <view class="sales-body-row">
+          <image class="row-image" src="./upload/pic1.jpg" mode="widthFix" />
+          <image class="row-image" src="./upload/pic2.jpg" mode="widthFix" />
+        </view>
+        <view class="sales-body-row">
+          <image class="row-image" src="./upload/pic3.jpg" mode="widthFix" />
+          <image class="row-image" src="./upload/pic4.jpg" mode="widthFix" />
+        </view>
+        <view class="sales-body-row">
+          <image class="row-image" src="./upload/pic5.jpg" mode="widthFix" />
+          <image class="row-image" src="./upload/pic6.jpg" mode="widthFix" />
+        </view>
+      </view>
+    </view>
   </view>
 </template>
 
