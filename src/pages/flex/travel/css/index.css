@@ -13,7 +13,6 @@
    * box-sizing 会改变元素宽度和高度的计算方式。 值有：
    * 1, content-box; 默认值，元素的宽度和高度只包括内容区域，不包括边框、内边距和外边距。
    * 2, border-box; 元素的宽度和高度包括内容区域、内边距和边框，但不包括外边距。
-   * 3, inherit; 继承其父元素的 box-sizing 属性值。
    */
   box-sizing: border-box;
 }
