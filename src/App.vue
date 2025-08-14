@@ -12,6 +12,8 @@ onHide(() => {
 </script>
 
 <style>
+/* 全局样式 */
+
 .select-container {
   display: flex;
   flex-wrap: nowrap;

@@ -89,13 +89,13 @@ div {
   flex-direction: row;
 
   /* 侧轴排列方式，单行的情况，使用 align-items */
-  // 1，默认值, Y轴是侧轴，就是从上到下排列
+  // 1，默认值, 子项在侧轴的起始位置。如：Y轴是侧轴，就是从上到下排列，既：flex-start表示在“上”位置
   align-items: flex-start;
 
-  // 2，Y轴是侧轴，就是从下到上排列
+  // 2，子项在侧轴的尾部位置。如：Y轴是侧轴，就是从下到上排列，既：flex-end 表示在“下”位置
   // align-items: flex-end;
 
-  // 3，侧轴居中
+  // 3，子项在侧轴居中位置。如：Y轴是侧轴，就是侧轴居中，既：center 表示在上下居“中”位置
   // align-items: center;
 
   // 4，侧轴，拉伸，这种情况下，子盒子不要给 高度(Y是侧轴) 或 宽度(X是侧轴)，否则不生效（修改下面的 div span css 的 width、height）。

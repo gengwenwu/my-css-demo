@@ -77,8 +77,26 @@
 		{
 			"path": "pages/flex/travel/index",
 			"style": {
-				"navigationBarTitleText": "index",
+				"navigationBarTitleText": "携程H5旅游首页",
 				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/grid/flex-impl",
+			"style": {
+				"navigationBarTitleText": "网格布局 -> flex实现方式"
+			}
+		},
+		{
+			"path": "pages/grid/grid-impl",
+			"style": {
+				"navigationBarTitleText": "网格布局 -> grid实现方式"
+			}
+		},
+		{
+			"path": "pages/grid/grid-impl-bilibii",
+			"style": {
+				"navigationBarTitleText": "网格布局 -> grid实现Bilibili布局"
 			}
 		}
 	],

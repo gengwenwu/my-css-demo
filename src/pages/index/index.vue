@@ -7,13 +7,28 @@ const demosRef = ref([
     url: "/pages/flex/flex-index",
     openType: "navigate",
   },
+  {
+    text: "网格布局 -> flex实现方式",
+    url: "/pages/grid/flex-impl",
+    openType: "navigate",
+  },
+  {
+    text: "网格布局 -> grid实现方式",
+    url: "/pages/grid/grid-impl",
+    openType: "navigate",
+  },
+  {
+    text: "网格布局 -> grid实现Bilibili布局",
+
+    url: "/pages/grid/grid-impl-bilibii",
+    openType: "navigate",
+  },
 ]);
 </script>
 
 <template>
   <view class="content">
     <view class="title"> css 学习案例 </view>
-
     <view class="demos">
       <view class="item" v-for="item in demosRef" :key="item.text">
         <navigator :url="item.url" :open-type="item.openType">

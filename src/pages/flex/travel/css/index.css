@@ -340,7 +340,7 @@
 /* 销售区域 */
 .sales-box {
   border-top: 1px solid #bbb;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
   margin-top: 8px;
 
   /* 销售区域 - 头部 */
