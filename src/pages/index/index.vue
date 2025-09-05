@@ -23,6 +23,12 @@ const demosRef = ref([
     url: "/pages/grid/grid-impl-bilibii",
     openType: "navigate",
   },
+  {
+    text: "网格布局 -> 自定义元素宽高比例 aspect-ratio",
+
+    url: "/pages/grid/aspect-ratio",
+    openType: "navigate",
+  },
 ]);
 </script>
 

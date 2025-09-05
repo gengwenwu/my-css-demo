@@ -98,6 +98,12 @@
 			"style": {
 				"navigationBarTitleText": "网格布局 -> grid实现Bilibili布局"
 			}
+		},
+		{
+			"path": "pages/grid/aspect-ratio",
+			"style": {
+				"navigationBarTitleText": "网格布局 -> 自定义元素宽高比例aspect-ratio"
+			}
 		}
 	],
 	"globalStyle": {
