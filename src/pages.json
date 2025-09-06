@@ -104,6 +104,12 @@
 			"style": {
 				"navigationBarTitleText": "网格布局 -> 自定义元素宽高比例aspect-ratio"
 			}
+		},
+		{
+			"path": "pages/grid/object-fit",
+			"style": {
+				"navigationBarTitleText": "图片裁剪 -> object-fit"
+			}
 		}
 	],
 	"globalStyle": {

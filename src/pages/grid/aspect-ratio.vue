@@ -48,11 +48,13 @@
   // 因此，可以使用 aspect-ratio 自定义宽高比例。
   // height: 200px;
 
-  // 自定义宽高比例，方式1
+  // 为盒子设置宽高比例，方式1
   aspect-ratio: 16/9; // 宽度/高度，既：16:9 的宽高。1/1 是正方形。
 
   // 自定义宽高比例，方式2
   // aspect-ratio: 0.5; // 等同于 1/2
+
+  // mdn 文档：https://developer.mozilla.org/zh-CN/docs/Web/CSS/aspect-ratios
 
   background: #66c7b4;
   border-radius: 10px;

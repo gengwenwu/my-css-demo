@@ -29,6 +29,12 @@ const demosRef = ref([
     url: "/pages/grid/aspect-ratio",
     openType: "navigate",
   },
+  {
+    text: "图片裁剪 -> object-fit",
+
+    url: "/pages/grid/object-fit",
+    openType: "navigate",
+  },
 ]);
 </script>
 
