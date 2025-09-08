@@ -35,6 +35,12 @@ const demosRef = ref([
     url: "/pages/grid/object-fit",
     openType: "navigate",
   },
+  {
+    text: "渐变 -> 线性渐变",
+
+    url: "/pages/gradient/linear-gradient",
+    openType: "navigate",
+  },
 ]);
 </script>
 

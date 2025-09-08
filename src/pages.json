@@ -110,6 +110,12 @@
 			"style": {
 				"navigationBarTitleText": "图片裁剪 -> object-fit"
 			}
+		},
+		{
+			"path": "pages/gradient/linear-gradient",
+			"style": {
+				"navigationBarTitleText": "渐变 -> 线性渐变"
+			}
 		}
 	],
 	"globalStyle": {
