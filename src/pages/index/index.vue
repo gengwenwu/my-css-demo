@@ -41,6 +41,12 @@ const demosRef = ref([
     url: "/pages/gradient/linear-gradient",
     openType: "navigate",
   },
+  {
+    text: "渐变 -> 镜像渐变",
+
+    url: "/pages/gradient/radial-gradient",
+    openType: "navigate",
+  },
 ]);
 </script>
 

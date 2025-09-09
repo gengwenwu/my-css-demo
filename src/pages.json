@@ -116,6 +116,12 @@
 			"style": {
 				"navigationBarTitleText": "渐变 -> 线性渐变"
 			}
+		},
+		{
+			"path": "pages/gradient/radial-gradient",
+			"style": {
+				"navigationBarTitleText": "渐变 -> 镜像渐变"
+			}
 		}
 	],
 	"globalStyle": {
