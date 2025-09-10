@@ -42,9 +42,15 @@ const demosRef = ref([
     openType: "navigate",
   },
   {
-    text: "渐变 -> 镜像渐变",
+    text: "渐变 -> 径向渐变",
 
     url: "/pages/gradient/radial-gradient",
+    openType: "navigate",
+  },
+  {
+    text: "渐变 -> 锥形渐变",
+
+    url: "/pages/gradient/conic-gradient",
     openType: "navigate",
   },
 ]);

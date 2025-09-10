@@ -12,7 +12,7 @@
   min-height: 100vh;
 
   /**  
-   * 镜像渐变 radial-gradient
+   * 径向渐变 radial-gradient
    * mdn 文档：https://developer.mozilla.org/zh-CN/docs/Web/CSS/gradient/radial-gradient
    *
    * 语法：radial-gradient(渐变形状|渐变区域(大小) 渐变起始位置, 颜色1, 颜色2 ...)

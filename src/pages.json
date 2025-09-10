@@ -120,7 +120,13 @@
 		{
 			"path": "pages/gradient/radial-gradient",
 			"style": {
-				"navigationBarTitleText": "渐变 -> 镜像渐变"
+				"navigationBarTitleText": "渐变 -> 径向渐变"
+			}
+		},
+		{
+			"path": "pages/gradient/conic-gradient",
+			"style": {
+				"navigationBarTitleText": "渐变 -> 锥形渐变"
 			}
 		}
 	],
